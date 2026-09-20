@@ -95,7 +95,7 @@ HbA1c >  5.65
 
 **HbA1c is by far the dominant predictor**, with BMI, VLDL, and age refining the borderline cases. This is consistent with HbA1c being a standard clinical marker for diabetes.
 
-## 📋 What I Have Done
+## What I Have Done
 
 - [x] **Dataset Loading & Initial Inspection:** Loaded the 1,000 × 14 dataset, checked shape and column data types with `info()`, and confirmed there were no missing values.
 - [x] **Descriptive Statistics:** Summary statistics (count, mean, std, min, quartiles, max) for all 10 numerical features.
@@ -109,7 +109,7 @@ HbA1c >  5.65
 
 ---
 
-## 🎓 What I Learned
+## What I Learned
 
 - [x] **Data Cleaning:** Inconsistent labels can silently corrupt a target. Trailing spaces turned a 3-class problem (`N`, `P`, `Y`) into 5 apparent classes, and 174 of 1,000 rows (about 17%) turned out to be duplicates.
 - [x] **Handling Imbalanced Classes:** With about 84% of records in one class, accuracy alone is misleading. `class_weight='balanced'` and per-class metrics give a more honest picture.
@@ -147,14 +147,14 @@ HbA1c >  5.65
 
 ---
 
-## 📁 Resources & Links
+## Resources & Links
 
 - ☁️ **Google Colab Notebook:** [View Interactive Code](https://colab.research.google.com/drive/1lN8AZP9TXKRVM2HRHs4QXkjPrdzBLZxr)
 
 
 ---
 
-## 🎯 Conclusion
+## Conclusion
 
 A small, interpretable decision tree can separate non-diabetic, pre-diabetic, and diabetic patients with about **96% test accuracy**, driven mainly by `HbA1c` and supported by `BMI`, `VLDL`, and `AGE`. The results are promising, but the small pre-diabetic sample, the single train/test split, and the diagnostic role of `HbA1c` mean they should be validated further before drawing strong conclusions.
 
